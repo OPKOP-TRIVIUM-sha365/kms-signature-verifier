@@ -1,0 +1,63 @@
+version: '3.9'
+
+services:
+  kms-verifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kms-verifier
+    image: kms-signature-verifier:latest
+    
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+    read_only_root_filesystem: true
+    user: "1000:1000"
+    
+    # Resource limits
+    mem_limit: 512m
+    cpus: 1.0
+    
+    # Volume mounts
+    volumes:
+      - ./audit_logs:/work:ro
+      - ./reports:/work/reports:rw
+      - /tmp:/tmp:rw
+    
+    # Environment
+    environment:
+      LOGLEVEL: "INFO"
+      TZ: "UTC"
+    
+    # Network
+    networks:
+      - kms-network
+    
+    # Restart policy
+    restart: on-failure
+    restart_policy:
+      condition: on-failure
+      delay: 5s
+      max_attempts: 3
+    
+    # Entrypoint
+    entrypoint: python3 /app/verify_kms_signature.py
+    command:
+      - --file
+      - /work/audit_log.json
+      - --sig
+      - /work/audit_log.json.sig
+      - --pub
+      - /work/kms_public.der
+      - --out-pem
+      - /work/reports/kms_public.pem
+      - --verbose
+
+networks:
+  kms-network:
+    driver: bridge
+
+# Usage:
+# docker-compose up                   # Run verification
+# docker-compose down                 # Cleanup
+# docker-compose logs -f              # View logs
