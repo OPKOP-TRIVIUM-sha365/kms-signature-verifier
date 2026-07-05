@@ -208,7 +208,102 @@ Contributions welcome! See CONTRIBUTING.md for guidelines.
 
 ## ⚖️ License
 
-MIT License - See LICENSE file for details
+*** Begin Patch
+*** Add File: LICENSE
++KMS Signature Verifier License (KSVL) 1.0
++SPDX-License-Identifier: KSVL-1.0
++
++Copyright (c) 2026 Vildan Kuljanović / OPKOP-TRIVIUM-sha365
++All rights reserved.
++
++Preamble
++This license governs use, reproduction, modification and distribution of the software
++and all accompanying materials in this repository (the "Software"). The intent is to
++permit broad use while preserving attribution, enabling auditability, and limiting
++liability for the author(s).
++
++Definitions
++"Software" means the source code, binaries, documentation, tests, examples, and other
++files included in this repository.
++"You" means any person or entity exercising rights under this License.
++
++Grant of Rights
++1. Permission is hereby granted, free of charge, to any person obtaining a copy of the
++   Software and associated documentation files, to use, copy, modify, merge, publish,
++   distribute, sublicense, and/or sell copies of the Software, subject to the
++   conditions set forth below.
++
++Conditions
++2. **Attribution**: Redistributions of source code must retain the above copyright
++   notice, this list of conditions and the following disclaimer in the top-level
++   LICENSE file and in any files that are modified.
++3. **NOTICE**: Redistributions in binary or compiled form must reproduce the above
++   copyright notice, this list of conditions and the following disclaimer in the
++   documentation and/or other materials provided with the distribution.
++4. **Changes**: If you modify the Software, you must include a clear notice in the
++   modified files and in the top-level documentation stating the nature of the
++   modifications and the date of modification.
++5. **No Endorsement**: You may not use the name of the copyright holder, contributors,
++   or project trademarks to endorse or promote products derived from the Software
++   without prior written permission.
++
++Patent Grant and Termination
++6. **Patent License**: Subject to the terms and conditions of this License, the
++   copyright holder and contributors hereby grant to You a perpetual, worldwide,
++   non-exclusive, no-charge, royalty-free, irrevocable (except as stated below)
++   patent license to make, have made, use, offer to sell, sell, import, and otherwise
++   transfer the Software.
++7. **Termination for Patent Litigation**: If You initiate patent litigation (including
++   a cross-claim or counterclaim) alleging that the Software infringes a patent,
++   then any patent licenses granted to You under this License for the Software shall
++   terminate as of the date such litigation is filed.
++
++Limitations and Disclaimer
++8. **No Warranty**: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
++   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++   FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. THE ENTIRE RISK ARISING OUT
++   OF USE OR PERFORMANCE OF THE SOFTWARE REMAINS WITH YOU.
++9. **Limitation of Liability**: TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW,
++   IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
++   INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
++   BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
++   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
++   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
++   OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE SOFTWARE, EVEN IF ADVISED
++   OF THE POSSIBILITY OF SUCH DAMAGE.
++
++Export and Compliance
++10. You are responsible for complying with applicable export control laws and
++    regulations when distributing the Software.
++
++Contributions
++11. By submitting contributions (including pull requests) to this repository, you
++    grant the copyright holder and other recipients a perpetual, worldwide,
++    non-exclusive, royalty-free license to use, reproduce, modify, and distribute
++    those contributions under the terms of this License.
++
++Termination
++12. This License and the rights granted hereunder will terminate automatically if You
++    fail to comply with any term(s) of this License. Upon termination, You must cease
++    all use and distribution of the Software and destroy all copies in your possession,
++    except as required by law.
++
++Governing Law
++13. This License shall be governed by and construed in accordance with the laws of
++    Bosnia and Herzegovina, without regard to conflict of law principles.
++
++Miscellaneous
++14. If any provision of this License is held to be unenforceable, such provision shall
++    be reformed only to the extent necessary to make it enforceable, and the remaining
++    provisions shall remain in full force and effect.
++
++How to apply this license to your repository
++- This file is the authoritative LICENSE for the repository.
++- Suggested short header for source files:
++  // SPDX-License-Identifier: KSVL-1.0
++
+*** End Patch
+
 
 ## 📧 Support
 
